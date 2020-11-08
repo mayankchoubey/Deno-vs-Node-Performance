@@ -1,8 +1,8 @@
-## Performance Comparison of Deno and Node.js over 30+ tests
+# Performance Comparison of Deno and Node.js on over 30+ tests
 
-# Introduction
+## Introduction
 
-# Tests and Results
+## Tests and Results
 
-# Next steps
+## Next steps
 
