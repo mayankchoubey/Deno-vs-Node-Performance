@@ -31,7 +31,7 @@ Finally, it's worth mentioning that, only readings would be presented. Coming to
 
 
 ### Versions
-Deno: ```1.5.1```
+Deno: ```1.5.2```
 Node.js: ```15.1.0```
 ### Environment
 MacBook Pro 1.4Ghz Quad core i5 with 8G memory
@@ -67,17 +67,17 @@ Total requests: ```1000```
 
 | Reading | Node.js | Deno |
 | ------- | ------- | ---- |
-| TimeTakenMS | ```527``` | ```566``` | 
-| Mean | ```0.31``` | ```0.32``` | 
+| TimeTakenMS | ```555``` | ```542``` | 
+| Mean | ```0.28``` | ```0.32``` | 
 | Median | ```0.00``` | ```0.00``` | 
 | Min | ```0``` | ```0``` | 
-| Max | ```19``` | ```11``` | 
+| Max | ```2``` | ```2``` | 
 
 
 ![Chart of Deno hello_world](charts/deno__hello_world__1.png)
 ![Chart of Node.js hello_world](charts/node__hello_world__1.png)
 
-Deno is ```6.89%``` slower than  Node.js
+Deno is ```2.34%``` faster than  Node.js
 #### Concurrency=10
 Total requests: ```10000```
 
@@ -85,17 +85,17 @@ Total requests: ```10000```
 
 | Reading | Node.js | Deno |
 | ------- | ------- | ---- |
-| TimeTakenMS | ```1646``` | ```1576``` | 
-| Mean | ```1.06``` | ```1.07``` | 
+| TimeTakenMS | ```1703``` | ```1619``` | 
+| Mean | ```1.08``` | ```1.02``` | 
 | Median | ```1.00``` | ```1.00``` | 
 | Min | ```0``` | ```0``` | 
-| Max | ```20``` | ```17``` | 
+| Max | ```11``` | ```19``` | 
 
 
 ![Chart of Deno hello_world](charts/deno__hello_world__10.png)
 ![Chart of Node.js hello_world](charts/node__hello_world__10.png)
 
-Deno is ```4.25%``` faster than  Node.js
+Deno is ```4.93%``` faster than  Node.js
 #### Concurrency=25
 Total requests: ```25000```
 
@@ -103,17 +103,17 @@ Total requests: ```25000```
 
 | Reading | Node.js | Deno |
 | ------- | ------- | ---- |
-| TimeTakenMS | ```4141``` | ```3687``` | 
-| Mean | ```3.13``` | ```2.48``` | 
+| TimeTakenMS | ```4030``` | ```3827``` | 
+| Mean | ```2.99``` | ```2.43``` | 
 | Median | ```3.00``` | ```2.00``` | 
 | Min | ```0``` | ```0``` | 
-| Max | ```41``` | ```37``` | 
+| Max | ```17``` | ```12``` | 
 
 
 ![Chart of Deno hello_world](charts/deno__hello_world__25.png)
 ![Chart of Node.js hello_world](charts/node__hello_world__25.png)
 
-Deno is ```10.96%``` faster than  Node.js
+Deno is ```5.04%``` faster than  Node.js
 
 ### Hello world with frameworks - oak and express
 Hello world program using the popular frameworks: Oak/Deno, Express/Node.js
@@ -126,17 +126,17 @@ Total requests: ```1000```
 
 | Reading | Node.js | Deno |
 | ------- | ------- | ---- |
-| TimeTakenMS | ```656``` | ```582``` | 
-| Mean | ```0.44``` | ```0.38``` | 
+| TimeTakenMS | ```673``` | ```589``` | 
+| Mean | ```0.41``` | ```0.35``` | 
 | Median | ```0.00``` | ```0.00``` | 
 | Min | ```0``` | ```0``` | 
-| Max | ```13``` | ```10``` | 
+| Max | ```2``` | ```2``` | 
 
 
 ![Chart of Deno hello_world_oak_exp](charts/deno__hello_world_oak_exp__1.png)
 ![Chart of Node.js hello_world_oak_exp](charts/node__hello_world_oak_exp__1.png)
 
-Deno is ```11.28%``` faster than  Node.js
+Deno is ```12.48%``` faster than  Node.js
 #### Concurrency=10
 Total requests: ```10000```
 
@@ -144,17 +144,17 @@ Total requests: ```10000```
 
 | Reading | Node.js | Deno |
 | ------- | ------- | ---- |
-| TimeTakenMS | ```2280``` | ```1734``` | 
-| Mean | ```1.79``` | ```1.20``` | 
+| TimeTakenMS | ```2333``` | ```1801``` | 
+| Mean | ```1.73``` | ```1.16``` | 
 | Median | ```2.00``` | ```1.00``` | 
 | Min | ```0``` | ```0``` | 
-| Max | ```22``` | ```16``` | 
+| Max | ```20``` | ```12``` | 
 
 
 ![Chart of Deno hello_world_oak_exp](charts/deno__hello_world_oak_exp__10.png)
 ![Chart of Node.js hello_world_oak_exp](charts/node__hello_world_oak_exp__10.png)
 
-Deno is ```23.95%``` faster than  Node.js
+Deno is ```22.80%``` faster than  Node.js
 #### Concurrency=25
 Total requests: ```25000```
 
@@ -162,17 +162,17 @@ Total requests: ```25000```
 
 | Reading | Node.js | Deno |
 | ------- | ------- | ---- |
-| TimeTakenMS | ```5385``` | ```3978``` | 
-| Mean | ```4.67``` | ```2.76``` | 
+| TimeTakenMS | ```5653``` | ```4093``` | 
+| Mean | ```4.51``` | ```2.69``` | 
 | Median | ```4.00``` | ```3.00``` | 
-| Min | ```0``` | ```1``` | 
-| Max | ```43``` | ```34``` | 
+| Min | ```0``` | ```0``` | 
+| Max | ```24``` | ```15``` | 
 
 
 ![Chart of Deno hello_world_oak_exp](charts/deno__hello_world_oak_exp__25.png)
 ![Chart of Node.js hello_world_oak_exp](charts/node__hello_world_oak_exp__25.png)
 
-Deno is ```26.13%``` faster than  Node.js
+Deno is ```27.60%``` faster than  Node.js
 
 ### Echo name over HTTPS
 A simple echo name program that runs over HTTPS
@@ -185,17 +185,17 @@ Total requests: ```1000```
 
 | Reading | Node.js | Deno |
 | ------- | ------- | ---- |
-| TimeTakenMS | ```699``` | ```688``` | 
-| Mean | ```0.44``` | ```0.47``` | 
+| TimeTakenMS | ```694``` | ```659``` | 
+| Mean | ```0.41``` | ```0.40``` | 
 | Median | ```0.00``` | ```0.00``` | 
 | Min | ```0``` | ```0``` | 
-| Max | ```20``` | ```15``` | 
+| Max | ```3``` | ```2``` | 
 
 
 ![Chart of Deno hello_name_https](charts/deno__hello_name_https__1.png)
 ![Chart of Node.js hello_name_https](charts/node__hello_name_https__1.png)
 
-Deno is ```1.57%``` faster than  Node.js
+Deno is ```5.04%``` faster than  Node.js
 #### Concurrency=10
 Total requests: ```10000```
 
@@ -203,17 +203,17 @@ Total requests: ```10000```
 
 | Reading | Node.js | Deno |
 | ------- | ------- | ---- |
-| TimeTakenMS | ```1923``` | ```1915``` | 
-| Mean | ```1.39``` | ```1.43``` | 
+| TimeTakenMS | ```1957``` | ```1938``` | 
+| Mean | ```1.34``` | ```1.33``` | 
 | Median | ```1.00``` | ```1.00``` | 
 | Min | ```0``` | ```0``` | 
-| Max | ```34``` | ```37``` | 
+| Max | ```11``` | ```20``` | 
 
 
 ![Chart of Deno hello_name_https](charts/deno__hello_name_https__10.png)
 ![Chart of Node.js hello_name_https](charts/node__hello_name_https__10.png)
 
-Deno is ```0.42%``` faster than  Node.js
+Deno is ```0.97%``` faster than  Node.js
 #### Concurrency=25
 Total requests: ```25000```
 
@@ -221,17 +221,17 @@ Total requests: ```25000```
 
 | Reading | Node.js | Deno |
 | ------- | ------- | ---- |
-| TimeTakenMS | ```4763``` | ```4465``` | 
-| Mean | ```3.88``` | ```3.39``` | 
+| TimeTakenMS | ```4827``` | ```4606``` | 
+| Mean | ```3.71``` | ```3.24``` | 
 | Median | ```4.00``` | ```3.00``` | 
 | Min | ```0``` | ```0``` | 
-| Max | ```79``` | ```102``` | 
+| Max | ```16``` | ```17``` | 
 
 
 ![Chart of Deno hello_name_https](charts/deno__hello_name_https__25.png)
 ![Chart of Node.js hello_name_https](charts/node__hello_name_https__25.png)
 
-Deno is ```6.26%``` faster than  Node.js
+Deno is ```4.58%``` faster than  Node.js
 
 ### Five hundred random integers
 Generate five hundred random integers and return them in a JSON array
@@ -244,17 +244,17 @@ Total requests: ```1000```
 
 | Reading | Node.js | Deno |
 | ------- | ------- | ---- |
-| TimeTakenMS | ```854``` | ```938``` | 
-| Mean | ```0.42``` | ```0.49``` | 
+| TimeTakenMS | ```882``` | ```909``` | 
+| Mean | ```0.39``` | ```0.41``` | 
 | Median | ```0.00``` | ```0.00``` | 
 | Min | ```0``` | ```0``` | 
-| Max | ```11``` | ```9``` | 
+| Max | ```3``` | ```2``` | 
 
 
 ![Chart of Deno random_int](charts/deno__random_int__1.png)
 ![Chart of Node.js random_int](charts/node__random_int__1.png)
 
-Deno is ```8.96%``` slower than  Node.js
+Deno is ```2.97%``` slower than  Node.js
 #### Concurrency=10
 Total requests: ```10000```
 
@@ -262,17 +262,17 @@ Total requests: ```10000```
 
 | Reading | Node.js | Deno |
 | ------- | ------- | ---- |
-| TimeTakenMS | ```2395``` | ```2496``` | 
-| Mean | ```1.57``` | ```1.60``` | 
+| TimeTakenMS | ```2486``` | ```2653``` | 
+| Mean | ```1.46``` | ```1.62``` | 
 | Median | ```1.00``` | ```2.00``` | 
 | Min | ```0``` | ```0``` | 
-| Max | ```22``` | ```19``` | 
+| Max | ```12``` | ```14``` | 
 
 
 ![Chart of Deno random_int](charts/deno__random_int__10.png)
 ![Chart of Node.js random_int](charts/node__random_int__10.png)
 
-Deno is ```4.05%``` slower than  Node.js
+Deno is ```6.29%``` slower than  Node.js
 #### Concurrency=25
 Total requests: ```25000```
 
@@ -280,17 +280,17 @@ Total requests: ```25000```
 
 | Reading | Node.js | Deno |
 | ------- | ------- | ---- |
-| TimeTakenMS | ```6112``` | ```5982``` | 
-| Mean | ```4.84``` | ```3.88``` | 
+| TimeTakenMS | ```6128``` | ```6218``` | 
+| Mean | ```4.42``` | ```3.84``` | 
 | Median | ```4.00``` | ```4.00``` | 
 | Min | ```0``` | ```0``` | 
-| Max | ```48``` | ```52``` | 
+| Max | ```18``` | ```21``` | 
 
 
 ![Chart of Deno random_int](charts/deno__random_int__25.png)
 ![Chart of Node.js random_int](charts/node__random_int__25.png)
 
-Deno is ```2.13%``` faster than  Node.js
+Deno is ```1.45%``` slower than  Node.js
 
 ### Five hundred random 16 character hex string
 Generate five hundred random 16 character hex strings and return them in a JSON array
@@ -303,17 +303,17 @@ Total requests: ```1000```
 
 | Reading | Node.js | Deno |
 | ------- | ------- | ---- |
-| TimeTakenMS | ```2220``` | ```2423``` | 
-| Mean | ```1.06``` | ```1.14``` | 
+| TimeTakenMS | ```2344``` | ```2524``` | 
+| Mean | ```1.03``` | ```1.09``` | 
 | Median | ```1.00``` | ```1.00``` | 
 | Min | ```0``` | ```0``` | 
-| Max | ```15``` | ```12``` | 
+| Max | ```3``` | ```3``` | 
 
 
 ![Chart of Deno random_hex](charts/deno__random_hex__1.png)
 ![Chart of Node.js random_hex](charts/node__random_hex__1.png)
 
-Deno is ```8.38%``` slower than  Node.js
+Deno is ```7.13%``` slower than  Node.js
 #### Concurrency=10
 Total requests: ```10000```
 
@@ -321,17 +321,17 @@ Total requests: ```10000```
 
 | Reading | Node.js | Deno |
 | ------- | ------- | ---- |
-| TimeTakenMS | ```6043``` | ```8421``` | 
-| Mean | ```4.33``` | ```5.14``` | 
+| TimeTakenMS | ```6183``` | ```9127``` | 
+| Mean | ```4.20``` | ```5.33``` | 
 | Median | ```3.00``` | ```5.00``` | 
 | Min | ```0``` | ```1``` | 
-| Max | ```33``` | ```38``` | 
+| Max | ```15``` | ```30``` | 
 
 
 ![Chart of Deno random_hex](charts/deno__random_hex__10.png)
 ![Chart of Node.js random_hex](charts/node__random_hex__10.png)
 
-Deno is ```28.24%``` slower than  Node.js
+Deno is ```32.26%``` slower than  Node.js
 #### Concurrency=25
 Total requests: ```25000```
 
@@ -339,17 +339,17 @@ Total requests: ```25000```
 
 | Reading | Node.js | Deno |
 | ------- | ------- | ---- |
-| TimeTakenMS | ```16104``` | ```22393``` | 
-| Mean | ```13.77``` | ```15.57``` | 
-| Median | ```12.00``` | ```16.00``` | 
-| Min | ```0``` | ```4``` | 
-| Max | ```68``` | ```112``` | 
+| TimeTakenMS | ```16157``` | ```22854``` | 
+| Mean | ```12.81``` | ```14.95``` | 
+| Median | ```12.00``` | ```15.00``` | 
+| Min | ```0``` | ```1``` | 
+| Max | ```37``` | ```37``` | 
 
 
 ![Chart of Deno random_hex](charts/deno__random_hex__25.png)
 ![Chart of Node.js random_hex](charts/node__random_hex__25.png)
 
-Deno is ```28.08%``` slower than  Node.js
+Deno is ```29.30%``` slower than  Node.js
 
 ### One hundred V1 UUIDs
 Generate one hundred V1 UUIDs and return them in a JSON array
@@ -362,17 +362,17 @@ Total requests: ```1000```
 
 | Reading | Node.js | Deno |
 | ------- | ------- | ---- |
-| TimeTakenMS | ```1078``` | ```1464``` | 
-| Mean | ```0.47``` | ```0.78``` | 
+| TimeTakenMS | ```1173``` | ```1469``` | 
+| Mean | ```0.49``` | ```0.75``` | 
 | Median | ```0.00``` | ```1.00``` | 
 | Min | ```0``` | ```0``` | 
-| Max | ```14``` | ```11``` | 
+| Max | ```2``` | ```3``` | 
 
 
 ![Chart of Deno uuid_v1](charts/deno__uuid_v1__1.png)
 ![Chart of Node.js uuid_v1](charts/node__uuid_v1__1.png)
 
-Deno is ```26.37%``` slower than  Node.js
+Deno is ```20.15%``` slower than  Node.js
 #### Concurrency=10
 Total requests: ```10000```
 
@@ -380,17 +380,17 @@ Total requests: ```10000```
 
 | Reading | Node.js | Deno |
 | ------- | ------- | ---- |
-| TimeTakenMS | ```2924``` | ```3728``` | 
-| Mean | ```1.98``` | ```2.75``` | 
+| TimeTakenMS | ```3058``` | ```3896``` | 
+| Mean | ```1.90``` | ```2.77``` | 
 | Median | ```2.00``` | ```3.00``` | 
 | Min | ```0``` | ```0``` | 
-| Max | ```26``` | ```33``` | 
+| Max | ```12``` | ```18``` | 
 
 
 ![Chart of Deno uuid_v1](charts/deno__uuid_v1__10.png)
 ![Chart of Node.js uuid_v1](charts/node__uuid_v1__10.png)
 
-Deno is ```21.57%``` slower than  Node.js
+Deno is ```21.51%``` slower than  Node.js
 #### Concurrency=25
 Total requests: ```25000```
 
@@ -398,17 +398,17 @@ Total requests: ```25000```
 
 | Reading | Node.js | Deno |
 | ------- | ------- | ---- |
-| TimeTakenMS | ```7690``` | ```10508``` | 
-| Mean | ```6.12``` | ```8.80``` | 
-| Median | ```6.00``` | ```9.00``` | 
+| TimeTakenMS | ```7759``` | ```10355``` | 
+| Mean | ```5.75``` | ```7.94``` | 
+| Median | ```5.00``` | ```8.00``` | 
 | Min | ```0``` | ```1``` | 
-| Max | ```54``` | ```110``` | 
+| Max | ```19``` | ```26``` | 
 
 
 ![Chart of Deno uuid_v1](charts/deno__uuid_v1__25.png)
 ![Chart of Node.js uuid_v1](charts/node__uuid_v1__25.png)
 
-Deno is ```26.82%``` slower than  Node.js
+Deno is ```25.07%``` slower than  Node.js
 
 ### One hundred V4 UUIDs
 Generate one hundred V4 UUIDs and return them in a JSON array
@@ -421,17 +421,17 @@ Total requests: ```1000```
 
 | Reading | Node.js | Deno |
 | ------- | ------- | ---- |
-| TimeTakenMS | ```1477``` | ```2386``` | 
-| Mean | ```0.87``` | ```1.74``` | 
+| TimeTakenMS | ```1561``` | ```2516``` | 
+| Mean | ```0.86``` | ```1.71``` | 
 | Median | ```1.00``` | ```2.00``` | 
 | Min | ```0``` | ```1``` | 
-| Max | ```12``` | ```11``` | 
+| Max | ```8``` | ```6``` | 
 
 
 ![Chart of Deno uuid_v4](charts/deno__uuid_v4__1.png)
 ![Chart of Node.js uuid_v4](charts/node__uuid_v4__1.png)
 
-Deno is ```38.10%``` slower than  Node.js
+Deno is ```37.96%``` slower than  Node.js
 #### Concurrency=10
 Total requests: ```10000```
 
@@ -439,17 +439,17 @@ Total requests: ```10000```
 
 | Reading | Node.js | Deno |
 | ------- | ------- | ---- |
-| TimeTakenMS | ```4671``` | ```12201``` | 
-| Mean | ```3.72``` | ```11.14``` | 
+| TimeTakenMS | ```4845``` | ```13179``` | 
+| Mean | ```3.57``` | ```11.50``` | 
 | Median | ```3.00``` | ```10.00``` | 
 | Min | ```0``` | ```2``` | 
-| Max | ```28``` | ```62``` | 
+| Max | ```9``` | ```23``` | 
 
 
 ![Chart of Deno uuid_v4](charts/deno__uuid_v4__10.png)
 ![Chart of Node.js uuid_v4](charts/node__uuid_v4__10.png)
 
-Deno is ```61.72%``` slower than  Node.js
+Deno is ```63.24%``` slower than  Node.js
 #### Concurrency=25
 Total requests: ```25000```
 
@@ -457,17 +457,17 @@ Total requests: ```25000```
 
 | Reading | Node.js | Deno |
 | ------- | ------- | ---- |
-| TimeTakenMS | ```11581``` | ```34289``` | 
-| Mean | ```9.95``` | ```32.51``` | 
-| Median | ```9.00``` | ```30.00``` | 
+| TimeTakenMS | ```11713``` | ```35736``` | 
+| Mean | ```9.35``` | ```32.10``` | 
+| Median | ```8.00``` | ```29.00``` | 
 | Min | ```0``` | ```2``` | 
-| Max | ```58``` | ```257``` | 
+| Max | ```26``` | ```55``` | 
 
 
 ![Chart of Deno uuid_v4](charts/deno__uuid_v4__25.png)
 ![Chart of Node.js uuid_v4](charts/node__uuid_v4__25.png)
 
-Deno is ```66.23%``` slower than  Node.js
+Deno is ```67.22%``` slower than  Node.js
 
 ### One hundred V5 UUIDs
 Generate one hundred V5 UUIDs and return them in a JSON array
@@ -480,17 +480,17 @@ Total requests: ```1000```
 
 | Reading | Node.js | Deno |
 | ------- | ------- | ---- |
-| TimeTakenMS | ```1716``` | ```2311``` | 
-| Mean | ```1.09``` | ```1.64``` | 
+| TimeTakenMS | ```1889``` | ```2406``` | 
+| Mean | ```1.13``` | ```1.60``` | 
 | Median | ```1.00``` | ```2.00``` | 
 | Min | ```0``` | ```1``` | 
-| Max | ```15``` | ```25``` | 
+| Max | ```4``` | ```4``` | 
 
 
 ![Chart of Deno uuid_v5](charts/deno__uuid_v5__1.png)
 ![Chart of Node.js uuid_v5](charts/node__uuid_v5__1.png)
 
-Deno is ```25.75%``` slower than  Node.js
+Deno is ```21.49%``` slower than  Node.js
 #### Concurrency=10
 Total requests: ```10000```
 
@@ -498,17 +498,17 @@ Total requests: ```10000```
 
 | Reading | Node.js | Deno |
 | ------- | ------- | ---- |
-| TimeTakenMS | ```6629``` | ```9793``` | 
-| Mean | ```5.42``` | ```8.76``` | 
+| TimeTakenMS | ```7024``` | ```10277``` | 
+| Mean | ```5.37``` | ```8.71``` | 
 | Median | ```5.00``` | ```9.00``` | 
-| Min | ```0``` | ```1``` | 
-| Max | ```32``` | ```75``` | 
+| Min | ```0``` | ```2``` | 
+| Max | ```19``` | ```14``` | 
 
 
 ![Chart of Deno uuid_v5](charts/deno__uuid_v5__10.png)
 ![Chart of Node.js uuid_v5](charts/node__uuid_v5__10.png)
 
-Deno is ```32.31%``` slower than  Node.js
+Deno is ```31.65%``` slower than  Node.js
 #### Concurrency=25
 Total requests: ```25000```
 
@@ -516,17 +516,17 @@ Total requests: ```25000```
 
 | Reading | Node.js | Deno |
 | ------- | ------- | ---- |
-| TimeTakenMS | ```15671``` | ```28780``` | 
-| Mean | ```14.21``` | ```27.08``` | 
+| TimeTakenMS | ```16605``` | ```29275``` | 
+| Mean | ```14.20``` | ```26.15``` | 
 | Median | ```14.00``` | ```27.00``` | 
-| Min | ```0``` | ```3``` | 
-| Max | ```77``` | ```241``` | 
+| Min | ```0``` | ```2``` | 
+| Max | ```35``` | ```56``` | 
 
 
 ![Chart of Deno uuid_v5](charts/deno__uuid_v5__25.png)
 ![Chart of Node.js uuid_v5](charts/node__uuid_v5__25.png)
 
-Deno is ```45.55%``` slower than  Node.js
+Deno is ```43.28%``` slower than  Node.js
 
 ### Parse five hundred strings
 Parse five hundred strings containing integers and return parsed integers in a JSON array
@@ -539,17 +539,17 @@ Total requests: ```1000```
 
 | Reading | Node.js | Deno |
 | ------- | ------- | ---- |
-| TimeTakenMS | ```960``` | ```1149``` | 
-| Mean | ```0.55``` | ```0.64``` | 
-| Median | ```1.00``` | ```1.00``` | 
+| TimeTakenMS | ```875``` | ```1014``` | 
+| Mean | ```0.43``` | ```0.41``` | 
+| Median | ```0.00``` | ```0.00``` | 
 | Min | ```0``` | ```0``` | 
-| Max | ```13``` | ```8``` | 
+| Max | ```2``` | ```2``` | 
 
 
 ![Chart of Deno parse_int](charts/deno__parse_int__1.png)
 ![Chart of Node.js parse_int](charts/node__parse_int__1.png)
 
-Deno is ```16.45%``` slower than  Node.js
+Deno is ```13.71%``` slower than  Node.js
 #### Concurrency=10
 Total requests: ```10000```
 
@@ -557,17 +557,17 @@ Total requests: ```10000```
 
 | Reading | Node.js | Deno |
 | ------- | ------- | ---- |
-| TimeTakenMS | ```2525``` | ```2854``` | 
-| Mean | ```1.74``` | ```1.88``` | 
-| Median | ```2.00``` | ```2.00``` | 
+| TimeTakenMS | ```2469``` | ```2963``` | 
+| Mean | ```1.62``` | ```1.88``` | 
+| Median | ```1.00``` | ```2.00``` | 
 | Min | ```0``` | ```0``` | 
-| Max | ```25``` | ```22``` | 
+| Max | ```11``` | ```21``` | 
 
 
 ![Chart of Deno parse_int](charts/deno__parse_int__10.png)
 ![Chart of Node.js parse_int](charts/node__parse_int__10.png)
 
-Deno is ```11.53%``` slower than  Node.js
+Deno is ```16.67%``` slower than  Node.js
 #### Concurrency=25
 Total requests: ```25000```
 
@@ -575,17 +575,17 @@ Total requests: ```25000```
 
 | Reading | Node.js | Deno |
 | ------- | ------- | ---- |
-| TimeTakenMS | ```6055``` | ```7055``` | 
-| Mean | ```4.78``` | ```5.03``` | 
-| Median | ```4.00``` | ```5.00``` | 
-| Min | ```0``` | ```1``` | 
-| Max | ```46``` | ```47``` | 
+| TimeTakenMS | ```6198``` | ```7379``` | 
+| Mean | ```4.66``` | ```4.81``` | 
+| Median | ```4.00``` | ```4.00``` | 
+| Min | ```0``` | ```0``` | 
+| Max | ```23``` | ```22``` | 
 
 
 ![Chart of Deno parse_int](charts/deno__parse_int__25.png)
 ![Chart of Node.js parse_int](charts/node__parse_int__25.png)
 
-Deno is ```14.17%``` slower than  Node.js
+Deno is ```16.00%``` slower than  Node.js
 
 ### Calculate mean of 500 numbers
 Calculate mean of 500 numbers and return it in response
@@ -598,17 +598,17 @@ Total requests: ```1000```
 
 | Reading | Node.js | Deno |
 | ------- | ------- | ---- |
-| TimeTakenMS | ```615``` | ```639``` | 
-| Mean | ```0.40``` | ```0.44``` | 
+| TimeTakenMS | ```645``` | ```673``` | 
+| Mean | ```0.38``` | ```0.41``` | 
 | Median | ```0.00``` | ```0.00``` | 
 | Min | ```0``` | ```0``` | 
-| Max | ```11``` | ```10``` | 
+| Max | ```2``` | ```2``` | 
 
 
 ![Chart of Deno mean](charts/deno__mean__1.png)
 ![Chart of Node.js mean](charts/node__mean__1.png)
 
-Deno is ```3.76%``` slower than  Node.js
+Deno is ```4.16%``` slower than  Node.js
 #### Concurrency=10
 Total requests: ```10000```
 
@@ -616,17 +616,17 @@ Total requests: ```10000```
 
 | Reading | Node.js | Deno |
 | ------- | ------- | ---- |
-| TimeTakenMS | ```1870``` | ```1921``` | 
-| Mean | ```1.30``` | ```1.41``` | 
+| TimeTakenMS | ```1904``` | ```1966``` | 
+| Mean | ```1.22``` | ```1.37``` | 
 | Median | ```1.00``` | ```1.00``` | 
 | Min | ```0``` | ```0``` | 
-| Max | ```21``` | ```18``` | 
+| Max | ```13``` | ```10``` | 
 
 
 ![Chart of Deno mean](charts/deno__mean__10.png)
 ![Chart of Node.js mean](charts/node__mean__10.png)
 
-Deno is ```2.65%``` slower than  Node.js
+Deno is ```3.15%``` slower than  Node.js
 #### Concurrency=25
 Total requests: ```25000```
 
@@ -634,17 +634,17 @@ Total requests: ```25000```
 
 | Reading | Node.js | Deno |
 | ------- | ------- | ---- |
-| TimeTakenMS | ```4438``` | ```4494``` | 
-| Mean | ```3.50``` | ```3.30``` | 
+| TimeTakenMS | ```4597``` | ```4682``` | 
+| Mean | ```3.34``` | ```3.32``` | 
 | Median | ```3.00``` | ```3.00``` | 
 | Min | ```0``` | ```0``` | 
-| Max | ```41``` | ```41``` | 
+| Max | ```16``` | ```13``` | 
 
 
 ![Chart of Deno mean](charts/deno__mean__25.png)
 ![Chart of Node.js mean](charts/node__mean__25.png)
 
-Deno is ```1.25%``` slower than  Node.js
+Deno is ```1.82%``` slower than  Node.js
 
 ### Calculate median of 500 numbers
 Calculate median of 500 numbers and return it in response
@@ -657,17 +657,17 @@ Total requests: ```1000```
 
 | Reading | Node.js | Deno |
 | ------- | ------- | ---- |
-| TimeTakenMS | ```725``` | ```698``` | 
-| Mean | ```0.51``` | ```0.49``` | 
+| TimeTakenMS | ```729``` | ```720``` | 
+| Mean | ```0.46``` | ```0.47``` | 
 | Median | ```0.00``` | ```0.00``` | 
 | Min | ```0``` | ```0``` | 
-| Max | ```11``` | ```9``` | 
+| Max | ```2``` | ```2``` | 
 
 
 ![Chart of Deno median](charts/deno__median__1.png)
 ![Chart of Node.js median](charts/node__median__1.png)
 
-Deno is ```3.72%``` faster than  Node.js
+Deno is ```1.23%``` faster than  Node.js
 #### Concurrency=10
 Total requests: ```10000```
 
@@ -675,17 +675,17 @@ Total requests: ```10000```
 
 | Reading | Node.js | Deno |
 | ------- | ------- | ---- |
-| TimeTakenMS | ```2240``` | ```2285``` | 
-| Mean | ```1.78``` | ```1.83``` | 
+| TimeTakenMS | ```2366``` | ```2500``` | 
+| Mean | ```1.74``` | ```1.94``` | 
 | Median | ```2.00``` | ```2.00``` | 
 | Min | ```0``` | ```0``` | 
-| Max | ```23``` | ```20``` | 
+| Max | ```9``` | ```13``` | 
 
 
 ![Chart of Deno median](charts/deno__median__10.png)
 ![Chart of Node.js median](charts/node__median__10.png)
 
-Deno is ```1.97%``` slower than  Node.js
+Deno is ```5.36%``` slower than  Node.js
 #### Concurrency=25
 Total requests: ```25000```
 
@@ -693,17 +693,17 @@ Total requests: ```25000```
 
 | Reading | Node.js | Deno |
 | ------- | ------- | ---- |
-| TimeTakenMS | ```5551``` | ```6524``` | 
-| Mean | ```4.67``` | ```5.65``` | 
+| TimeTakenMS | ```5695``` | ```6877``` | 
+| Mean | ```4.56``` | ```5.76``` | 
 | Median | ```4.00``` | ```6.00``` | 
-| Min | ```0``` | ```1``` | 
-| Max | ```44``` | ```47``` | 
+| Min | ```0``` | ```0``` | 
+| Max | ```16``` | ```33``` | 
 
 
 ![Chart of Deno median](charts/deno__median__25.png)
 ![Chart of Node.js median](charts/node__median__25.png)
 
-Deno is ```14.91%``` slower than  Node.js
+Deno is ```17.19%``` slower than  Node.js
 ## Scenarios to be added
 
 Following is the list of scenarios that would be added soon:
